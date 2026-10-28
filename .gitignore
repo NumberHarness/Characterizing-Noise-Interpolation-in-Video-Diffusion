@@ -1,0 +1,47 @@
+# Default-deny: only paths listed in UPLOAD_MANIFEST.md are publishable.
+# Re-include directories so Git can reach explicitly whitelisted nested files.
+*
+!*/
+
+# Required root files.
+!/.gitignore
+!/README.md
+!/UPLOAD_MANIFEST.md
+!/requirements-reproduction.txt
+!/model_config.py
+!/model_paths.env.example
+!/reproduce_experiments.py
+!/f0a_gen.py
+!/hh_followup_gen.py
+!/hh_followup_readout.py
+!/groups_gen.py
+!/ga2_gen.py
+!/x0_gen.py
+!/gridfill_gen.py
+!/t2v_gen.py
+!/pure5b_gen.py
+!/expand4_gen.py
+!/kresp_run.py
+!/korder_probe.py
+!/readout_arms.py
+!/yolo_detector.py
+!/video_protocol.py
+!/ent_readout.py
+!/arm_catalog.py
+!/ll_blend.py
+!/ot_common.py
+!/noise_struct.py
+!/prescan_pixel_hf.py
+
+# Optional scripts listed in UPLOAD_MANIFEST.md.
+!/kframes_gen.py
+!/kframes_horse.py
+
+# Required conditioning inputs listed in UPLOAD_MANIFEST.md.
+!/payload/
+!/payload/donor_cow_p_cond.png
+!/scenes/
+!/scenes/horse_f/
+!/scenes/horse_f/cond.png
+!/scenes/boat_l/
+!/scenes/boat_l/cond.png
